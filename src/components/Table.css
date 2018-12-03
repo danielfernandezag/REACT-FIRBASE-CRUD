@@ -1,0 +1,10 @@
+.bg-info.text-light.r-pair:hover,
+.bg-info.text-light.r-pair:active {
+	background: #f8f9fa;
+	color: #17a2b8;
+}
+.bg-light.text-info.r-prime:hover,
+.bg-light.text-info.r-pair:active {
+	background: #17a2b8;
+	color: #f8f9fa;
+}

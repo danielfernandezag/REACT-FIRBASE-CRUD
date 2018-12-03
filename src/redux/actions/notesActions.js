@@ -1,3 +1,18 @@
+import { db_notes } from '../../config';
+
+export const getNotes = () => {
+	return dispatch => {
+		db_notes.on('value', snap => {
+			dispatch({
+				type: 'GET_NOTES',
+				notes: snap.val()
+			});
+		});
+	};
+};
+
+/*** USER ACTIONS */
+
 export const addNote = (id, text) => ({
 	type: 'ADD_NOTE',
 	id: id,
